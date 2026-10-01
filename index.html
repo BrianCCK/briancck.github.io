@@ -55,6 +55,12 @@ img{max-width:100%}
 }
 
 *{box-sizing:border-box}
+/* Large monitors only: scale the whole page so it fills the screen like it does on a laptop */
+:root{--z:1}
+@media (min-width:1900px){ html{zoom:1.15} :root{--z:1.15} }
+@media (min-width:2200px){ html{zoom:1.3} :root{--z:1.3} }
+@media (min-width:2500px){ html{zoom:1.45} :root{--z:1.45} }
+@media (min-width:3200px){ html{zoom:2.1} :root{--z:2.1} }
 [hidden]{display:none!important}
 html{scroll-behavior:smooth}
 html.lock{overflow:hidden}
@@ -109,7 +115,7 @@ p{margin:0}
 .hero{padding-block:clamp(48px,8vw,96px) clamp(40px,6vw,72px); scroll-margin-top:200px}
 .hero .wrap{display:grid; grid-template-columns:1.15fr .85fr; gap:clamp(28px,5vw,64px); align-items:center}
 @media (min-width:861px){
-  .hero{min-height:calc(100vh - 61px); min-height:calc(100svh - 61px); display:flex; align-items:center}
+  .hero{min-height:calc(100vh / var(--z) - 60px); min-height:calc(100svh / var(--z) - 60px); display:flex; align-items:center}
   .hero .wrap{width:100%}
 }
 .hero .who{display:flex; align-items:center; gap:16px; margin-bottom:26px}
@@ -358,7 +364,7 @@ footer .wrap{display:flex; justify-content:space-between; gap:16px; flex-wrap:wr
       <p class="lede">I’m a Mathematics (Statistics) student at HKUST with an extended major in AI. I <b>build LLM agents and platforms</b>, and <b>run analyses on real-world data</b>. Right now I’m researching agentic LLMs at HKUST CSE, after a research stint at Cornell.</p>
       <div class="ctas">
         <a class="btn solid" href="#work">See my work ↓</a>
-        <a class="btn" id="cv-link" href="files/Brian-Chan-CV.pdf?v=2026-10-01b" target="_blank" rel="noopener">View CV ↗︎</a>
+        <a class="btn" id="cv-link" href="files/Brian-Chan-CV.pdf?v=2026-10-01c" target="_blank" rel="noopener">View CV ↗︎</a>
         <a class="btn" href="https://www.linkedin.com/in/briancck" target="_blank" rel="noopener">LinkedIn ↗︎</a>
       </div>
     </div>
