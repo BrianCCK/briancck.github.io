@@ -129,6 +129,10 @@ p{margin:0}
 .facts dd{margin:0; color:var(--muted); font-size:15px; line-height:1.45}
 .facts dd b{color:var(--ink); font-weight:600}
 @media (max-width:860px){ .hero .wrap{grid-template-columns:1fr} }
+@media (max-width:600px){
+  .hero .ctas{display:grid; grid-template-columns:repeat(3,1fr); gap:8px}
+  .hero .ctas .btn{justify-content:center; gap:5px; padding:12px 6px; font-size:clamp(12px,3.4vw,14px); white-space:nowrap}
+}
 @media (max-width:440px){ .facts dl div{grid-template-columns:1fr; gap:8px} .facts dt{text-align:left} }
 
 /* ---------- now strip ---------- */
@@ -354,8 +358,8 @@ footer .wrap{display:flex; justify-content:space-between; gap:16px; flex-wrap:wr
       <p class="lede">I’m a Mathematics (Statistics) student at HKUST with an extended major in AI. I <b>build LLM agents and platforms</b>, and <b>run analyses on real-world data</b>. Right now I’m researching agentic LLMs at HKUST CSE, after a research stint at Cornell.</p>
       <div class="ctas">
         <a class="btn solid" href="#work">See my work ↓</a>
-        <a class="btn" id="cv-link" href="files/Brian-Chan-CV.pdf?v=2026-10-01b" target="_blank" rel="noopener">View CV ↗</a>
-        <a class="btn" href="https://www.linkedin.com/in/briancck" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn" id="cv-link" href="files/Brian-Chan-CV.pdf?v=2026-10-01b" target="_blank" rel="noopener">View CV ↗︎</a>
+        <a class="btn" href="https://www.linkedin.com/in/briancck" target="_blank" rel="noopener">LinkedIn ↗︎</a>
       </div>
     </div>
 
@@ -472,7 +476,7 @@ footer .wrap{display:flex; justify-content:space-between; gap:16px; flex-wrap:wr
             <li>Keeps a medical society’s events, photo album and knowledge hub current for members and the public</li>
           </ul>
           <div class="chips"><span>web design</span><span>HTML/CSS</span><span>deployment</span></div>
-          <a class="out" href="https://hkhns.org" target="_blank" rel="noopener">Visit hkhns.org ↗</a>
+          <a class="out" href="https://hkhns.org" target="_blank" rel="noopener">Visit hkhns.org ↗︎</a>
         </div>
       </article>
 
@@ -685,7 +689,7 @@ footer .wrap{display:flex; justify-content:space-between; gap:16px; flex-wrap:wr
       </div>
       <div class="links">
         <div class="row2"><span><small>Email</small><span id="email">chanbrianckc2005@gmail.com</span></span><button type="button" id="copy">Copy</button></div>
-        <div class="row2"><span><small>LinkedIn</small>linkedin.com/in/briancck</span><a href="https://www.linkedin.com/in/briancck" target="_blank" rel="noopener">Open ↗</a></div>
+        <div class="row2"><span><small>LinkedIn</small>linkedin.com/in/briancck</span><a href="https://www.linkedin.com/in/briancck" target="_blank" rel="noopener">Open ↗︎</a></div>
         <div class="row2"><span><small>Based in</small>Hong Kong · HKT (UTC+8)</span></div>
       </div>
     </div>
