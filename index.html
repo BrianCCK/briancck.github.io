@@ -318,7 +318,7 @@ footer .wrap{display:flex; justify-content:space-between; gap:16px; flex-wrap:wr
       <p class="lede">I’m a Mathematics (Statistics) student at HKUST with an extended major in AI. I <b>build LLM agents and platforms</b>, <b>run analyses on real data</b>, and <b>ship websites people use</b>. Right now I’m researching agentic LLMs at HKUST CSE, after a research stint at Cornell.</p>
       <div class="ctas">
         <a class="btn solid" href="#work">See my work ↓</a>
-        <a class="btn" id="cv-link" href="files/Brian-Chan-CV.pdf" target="_blank" rel="noopener">Download CV ↓</a>
+        <a class="btn" id="cv-link" href="files/Brian-Chan-CV.pdf" target="_blank" rel="noopener">View CV ↗</a>
         <a class="btn" href="https://www.linkedin.com/in/briancck" target="_blank" rel="noopener">LinkedIn ↗</a>
       </div>
     </div>
@@ -484,7 +484,7 @@ footer .wrap{display:flex; justify-content:space-between; gap:16px; flex-wrap:wr
       </div>
     </div>
     <div class="certs">
-      <div class="cert"><div class="score">96%</div><b>Mathematics for Machine Learning</b><span>Imperial College London · Specialization · 2025</span></div>
+      <div class="cert"><div class="score">96%</div><b>Mathematics for Machine Learning</b><span>Imperial College London · Specialization · 2026</span></div>
       <div class="cert"><div class="score">9 courses</div><b>Data Science Professional Certificate</b><span>HarvardX · inference, modelling, linear regression · 2025</span></div>
       <div class="cert"><div class="score">6.036</div><b>Introduction to Machine Learning</b><span>MIT OpenCourseWare · self-study · 2025</span></div>
     </div>
@@ -781,13 +781,6 @@ document.addEventListener('keydown', e => {
   else if (e.key === 'ArrowLeft') go(idx - 1);
 });
 addEventListener('resize', () => { if (!lb.hidden) track.scrollLeft = idx * track.clientWidth; });
-
-// CV button: the link itself opens the PDF in a new tab; this also saves a copy
-document.getElementById('cv-link').addEventListener('click', e => {
-  const a = document.createElement('a');
-  a.href = e.currentTarget.href; a.download = 'Brian-Chan-CV.pdf';
-  document.body.appendChild(a); a.click(); a.remove();
-});
 
 document.getElementById('copy').addEventListener('click', async (e) => {
   const btn = e.currentTarget, el = document.getElementById('email');
